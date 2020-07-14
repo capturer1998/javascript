@@ -1,0 +1,23 @@
+<!-- WAP in javascript to display the current date and time in following format.
+Output:
+Today is: Tuesday
+Current time is: 10PM:30:38 -->
+
+<html>
+    <h1>Program to print current date and time in given format </h1>
+    <body> 
+        <script>
+            var a=new Date();
+            var b=a.getDay();
+            var days=["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+            document.write("Today is: "+ days[b]);
+            
+            if(a.getHours()>12)
+                var time= (a.getHours()-12)+" PM "+ a.getMinutes()+" "+ a.getSeconds();
+            else
+                var time= a.getHours()+" AM "+ a.getMinutes()+" "+ a.getSeconds();
+
+            document.write("<br/> Current time is: "+time);
+        </script>
+    </body>
+</html>

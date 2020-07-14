@@ -1,0 +1,14 @@
+<!-- WAPin javascript to get the current date in format dd-mm-yyyy,dd/mm/yyyy  / mm-dd-yyyy,mm/dd/yyyy -->
+<html>
+    <h2>
+        Program to get the current date in format dd-mm-yyyy, dd/mm/yyyy or mm-dd-yyyy, mm/dd/yyyy
+    </h2>
+    <body>
+        <script>
+            var c_datetime = new Date()
+            var new_date = c_datetime.getDate() + "-" + (c_datetime.getMonth() + 1) + "-" + c_datetime.getFullYear() + ",\t" + c_datetime.getDate() + "/" + (c_datetime.getMonth()+1) + "/" + c_datetime.getFullYear()
+            document.write(new_date)
+            var new_date1 = (c_datetime.getMonth() + 1) + "-" + c_datetime.getDate() + "-"  + c_datetime.getFullYear() + ",\t" + (c_datetime.getMonth()+1)+ "/" + c_datetime.getDate() + "/" + c_datetime.getFullYear()
+            document.write("<br/>"+new_date1)
+        </script>
+    </body>
